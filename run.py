@@ -58,9 +58,15 @@ api_key = "anvuqAgs3o2rBZURMdRf"
 # Connect to Roboflow
 rf = rf.Roboflow(api_key=api_key)
 
+# Model-Model yang bagus
+# 1. fruit-freshness-detection-08shj Gunakan versi (8)
+# 2. (freshness-fruits-and-vegetables) Gunakan versi (7)
+# 3. Lainya dicoba sampai nemu yang bagus
+# 4. webnya (https://universe.roboflow.com/)
+
 # Access project and model (assuming project name and version)
-project = rf.workspace().project("rotten-fruit-detector-ver-2")
-model = project.version(3).model
+project = rf.workspace().project("rotten-fruit-detector-ver-2") # Masukan model yang bagus disini
+model = project.version(3).model # Masukan angka versi nya disini
 
 # Cetak Logo
 os.system("clear")
